@@ -1,9 +1,17 @@
 **Zango Unpacker**
 -
-A tool to unpack data from various **Zango** games, aka **Full Armor Studios**. <br /><br />
+A tool to unpack & repack data from various **Zango** games, aka **Full Armor Studios**. <br /><br />
 <img src="https://github.com/RavenDS/zango-unpacker/blob/main/zango-unpacker.jpg" width="267" height="224"></img><br />
 <br />
 File format must be **.apk**
+
+How to mod your Zango game:
+-
+1. Unpack your .apk archive in a folder named after the executable (if executable is "david.exe", create a folder named "david")
+2. Move the .apk out of the game directory
+3. Apply the wanted modifications and try them in-game
+4. If the game doesn't run with an extracted folder, repack the folder to an .apk
+
 
 Compatibility list:
 - 
