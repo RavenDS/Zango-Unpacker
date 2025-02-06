@@ -2,9 +2,12 @@
 Imports System.Text
 
 Public Class Form1
+    
     Dim ArchivePath As String
     Dim FolderPath As String
+    
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        
         If ArchivePath Is Nothing Or ArchiveTextBox.Text = "" Then
             Exit Sub
         End If
@@ -44,6 +47,7 @@ Public Class Form1
                 Exit Sub
             End If
 
+                    
             ' Loop until the end of header data (VeryFirstOffset)
             For i = 12 To VeryFirstOffset - 1 Step +272
 
@@ -76,21 +80,30 @@ Public Class Form1
 
                 ' Read data from FirstFileOffset to SecondFileOffset and output to file
                 Dim outputFileName As String = Path.Combine(outputDirectory, FirstFileName)
+                    
                 If Not Directory.Exists(Path.GetDirectoryName(outputFileName)) Then
                     Directory.CreateDirectory(Path.GetDirectoryName(outputFileName))
                 End If
 
+                    
                 Using writer As New BinaryWriter(File.Open(outputFileName, FileMode.Create))
+                        
                     reader.BaseStream.Seek(FirstFileOffset, SeekOrigin.Begin)
+                        
                     Dim length As Long = SecondFileOffset - FirstFileOffset
+                        
                     If length > reader.BaseStream.Length Then
                         length = reader.BaseStream.Length - FirstFileOffset
                     End If
+                        
                     writer.Write(reader.ReadBytes(CInt(length)))
+                        
                 End Using
 
                 ProgressBar1.Value = i
+                    
             Next
+                
         End Using
     End Sub
 
