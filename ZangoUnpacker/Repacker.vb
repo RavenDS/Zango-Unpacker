@@ -2,16 +2,22 @@
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Xml
+
 Public Class Repacker
+    
     Dim InputFolderPath As String
     Dim OutputFilePath As String
+    
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        
         If InputFolderPath Is Nothing Or FolderTextBox.Text = "" Then
             Exit Sub
         End If
+            
         If OutputFilePath Is Nothing Or ArchiveTextBox.Text = "" Then
             OutputFilePath = "output.apk"
         End If
+            
         Dim CurrentOffset As Integer
         Dim NextOffset As Integer
         Dim PreviousOffset As Integer
@@ -24,7 +30,9 @@ Public Class Repacker
             MsgBox("Too many files!" & vbCrLf & vbCrLf & "File count must be under 65535", MsgBoxStyle.Critical, "Error")
             Exit Sub
         End If
+                
         Dim FullHeaderLength As Integer = (FileCompleteCount * 272) + 12
+                
         CurrentOffset = FullHeaderLength
         PreviousOffset = FullHeaderLength
 
@@ -59,8 +67,11 @@ Public Class Repacker
                 CurrentOffset = PreviousOffset + CurrentFileSize
 
                 ProgressBar1.Value = ProgressBar1.Value + 1
+                    
             Next
+                
         End Using
+            
         ' Get the size of datacontent.bin
         Dim dataContentSize As Integer = CInt(New FileInfo("datacontent.bin").Length)
 
@@ -98,10 +109,12 @@ Public Class Repacker
     End Sub
 
     Function GetAllFiles(path As String) As List(Of String)
+                    
         Dim files As New List(Of String)
         files.AddRange(Directory.GetFiles(path, "*.*", SearchOption.AllDirectories))
         files.Sort()
         Return files
+                    
     End Function
 
     Private Sub FolderBrowseButton_Click(sender As Object, e As EventArgs) Handles FolderBrowseButton.Click
