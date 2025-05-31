@@ -24,3 +24,5 @@ Compatibility list:
 * <a href="https://archive.org/details/ZangoMuncherDeluxe">Zango Muncher Deluxe</a> (manna0.apk)
 * <a href="https://archive.org/details/ZangoTvDeluxe">Zango TV Deluxe</a> (jericho0.apk)
 * Supposedly any Zango game with an .APK archive
+
+Check out <a href="https://github.com/RavenDS/Zango-Bypass">Zango Bypass</a> to play without Zango adware!
