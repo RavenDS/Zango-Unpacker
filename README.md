@@ -16,7 +16,7 @@ How to mod your Zango game:
 Compatibility list:
 - 
 * <a href="https://archive.org/details/setupdavid2393">David vs. Goliath</a> (david0.apk)
-* * <a href="https://archive.org/details/jadeshadow">Jade Shadow</a> (jade0.apk)
+* <a href="https://archive.org/details/jadeshadow">Jade Shadow</a> (jade0.apk)
 * <a href="https://archive.org/details/SetupTheWallsOfJericho">The Walls of Jericho</a> (jericho0.apk)
 * <a href="https://archive.org/details/LibraryOfTheAges">Library of the Ages</a> (library0.apk)
 * <a href="https://archive.org/details/SetupManna_201903">Manna Munchers</a> (manna0.apk)
