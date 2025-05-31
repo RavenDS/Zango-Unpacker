@@ -16,11 +16,11 @@ How to mod your Zango game:
 Compatibility list:
 - 
 * <a href="https://archive.org/details/setupdavid2393">David vs. Goliath</a> (david0.apk)
+* * <a href="https://archive.org/details/jadeshadow">Jade Shadow</a> (jade0.apk)
 * <a href="https://archive.org/details/SetupTheWallsOfJericho">The Walls of Jericho</a> (jericho0.apk)
 * <a href="https://archive.org/details/LibraryOfTheAges">Library of the Ages</a> (library0.apk)
 * <a href="https://archive.org/details/SetupManna_201903">Manna Munchers</a> (manna0.apk)
 * <a href="https://archive.org/details/SecretChamberDeluxe">Secret Chamber Deluxe</a> (chamber0.apk)
 * <a href="https://archive.org/details/ZangoMuncherDeluxe">Zango Muncher Deluxe</a> (manna0.apk)
 * <a href="https://archive.org/details/ZangoTvDeluxe">Zango TV Deluxe</a> (jericho0.apk)
-* <a href="https://lostmediawiki.com/Jade_Shadow_(lost_PC_shooter_game;_2005)">Jade Shadow</a> (jade0.apk) **UNTESTED**
 * Supposedly any Zango game with an .APK archive
